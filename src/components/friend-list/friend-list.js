@@ -21,7 +21,7 @@ function FriendList({ friends }) {
 FriendList.propTypes = {
   friends: propTypes.arrayOf(
     propTypes.exact({
-      avatar: propTypes.string,
+      avatar: propTypes.string.isRequired,
       name: propTypes.string.isRequired,
       isOnline: propTypes.bool.isRequired,
       id: propTypes.number.isRequired

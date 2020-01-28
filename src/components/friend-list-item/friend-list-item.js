@@ -20,12 +20,9 @@ function FriendListItem({ avatar, name, isOnline }) {
   );
 }
 
-FriendListItem.defaultProps = {
-  avatar: "https://israel.apartogram.com/content/uploads/avatar/none-avatar.png"
-};
 
 FriendListItem.propTypes = {
-  avatar: propTypes.string,
+  avatar: propTypes.string.isRequired,
   name: propTypes.string.isRequired,
   isOnline: propTypes.bool.isRequired
 };

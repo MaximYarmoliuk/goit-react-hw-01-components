@@ -33,7 +33,7 @@ function Profile({ user }) {
 
 Profile.propTypes = {
   user: propTypes.exact({
-    avatar: propTypes.string,
+    avatar: propTypes.string.isRequired,
     name: propTypes.string.isRequired,
     tag: propTypes.string.isRequired,
     location: propTypes.string.isRequired,
